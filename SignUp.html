@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Store</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet " href="styles/Login&SignUp.css" />
+  </head>
+  <body>
+    <h1>Sign Up</h1>
+    <p><b>Please fill in this form to create an account.</b></p>
+    <div class="container">
+      <form>
+        <div class="control">
+          <label><b>Username</b></label>
+          <br />
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="name"
+            required
+          />
+          <br />
+          <label><b>Email</b></label>
+          <br />
+          <input type="email" placeholder="Enter Email" name="email" required />
+          <br />
+          <label><b>Password</b></label>
+          <br />
+          <input
+            type="Password"
+            placeholder="Enter Password"
+            name="passw"
+            required
+          />
+          <br />
+          <label><b>ConfirmPassword</b></label>
+          <br />
+          <input type="Password" placeholder="Repeat Password" required />
+          <br />
+          <input type="radio" name="account type" />
+          <label><b>Admin</b></label>
+          <input type="radio" name="account type" />
+          <label><b>User</b></label>
+          <br />
+          <input type="checkbox" checked="checked" name="remember" />
+          <label><b>Remember me</b></label>
+          <br />
+        </div>
+      </form>
+      <a href="./AdminDashboard.html"><button>Sign up</button></a>
+    </div>
+    <p class="Reg">
+      Already have an account?
+      <a href="./login.html"> Login </a>
+    </p>
+  </body>
+</html>

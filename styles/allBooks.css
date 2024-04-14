@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:400,700');
+
+:root {
+  --text: #ecf3f8;
+  --background: #04080a;
+  --primary: #93bfd8;
+  --secondary: #73296d;
+  --accent: #bd466c;
+}
+
+body {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 400;
+  color: var(--text);
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+.search-bar{
+  width: 100%;
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  background-color: var(--background);
+  border: 1px solid var(--primary);
+  color: var(--secondary);
+}
+
+.search-bar::placeholder {
+  color: #93bfd898;
+}
+
+.search-bar:focus {
+  outline: none;
+  border: 1px solid var(--secondary);
+}
+
+.title {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+
+
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.book {
+  text-align: center;
+}
+
+.book img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 22rem; 
+}
+
+.image-container {
+  overflow: hidden; /* Hide overflow content */
+  margin: 0 auto; /* Center the container */
+}
+
+.image-container img {
+  display: block; /* Ensure the image behaves like a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.book p {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.book button {
+  background-color: var(--primary);
+  color: var(--background);
+  font-size: 0.9rem;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.book button:hover {
+  background-color: var(--accent);
+}

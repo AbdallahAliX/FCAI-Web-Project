@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:400,700');
+
+:root {
+  --text: #ecf3f8;
+  --background: #04080a;
+  --primary: #93bfd8;
+  --secondary: #73296d;
+  --accent: #bd466c;
+}
+
+body {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 400;
+  color: var(--text);
+  background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 700;
+}
+
+html { font-size: 100%; } /* 16px */
+
+h1 { font-size: 4.210rem; margin: 0; /* 67.36px */ }
+
+h2 { font-size: 3.158rem; /* 50.56px */ }
+
+h3 { font-size: 2.369rem; /* 37.92px */ }
+
+h4 { font-size: 1.777rem; /* 28.48px */ }
+
+h5 { font-size: 1.333rem; /* 21.28px */ }
+
+small { font-size: 0.750rem; /* 12px */ }
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    padding: 1.6rem;
+  }
+  
+  
+  .nav-link {
+    color: var(--text);
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .nav-link:hover {
+    color: var(--primary);
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+  }
