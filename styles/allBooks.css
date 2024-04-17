@@ -89,5 +89,5 @@ body {
 }
 
 .book button:hover {
-  background-color: var(--accent);
+  background-color: var(--secondary);
 }

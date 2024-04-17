@@ -1,36 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <title>Book Space</title>
+    <title>new book</title>
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/landingPage.css" />
+    <link rel="stylesheet" href="styles/addNewBook.css" />
   </head>
-
   <body>
-    <div>
-      <h2>Edit book details</h2>
+    <h2>Edit Book</h2>
+
+    <div class="content">
+      <form method="post">
+        <div>
+          <label for="name"><b>Name</b></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter Book's Name"
+          />
+        </div>
+        <br />
+        <!-- <div>
+          <label for="id"><b>Book ID</b></label>
+          <input
+            type="text"
+            name="id"
+            id="id"
+            required
+            placeholder="Enter Book's ID"
+          />
+        </div> -->
+        <!-- <br /> -->
+        <div>
+          <label for="author"><b>Author</b></label>
+          <input
+            type="text"
+            name="author"
+            id="author"
+            required
+            placeholder="Enter Author's Name"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="category"><b>Category</b></label>
+          <select name="category" id="category">
+            <option value="romance">Romance</option>
+            <option value="adventure">Adventure</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="horror">Horror</option>
+            <option value="history">History</option>
+            <option value="crime">Crime</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="year"><b>Published in</b></label>
+          <input
+            type="text"
+            name="date"
+            id="year"
+            placeholder="Enter Publication Year"
+          />
+        </div>
+        <br />
+      </form>
+      <a href="./AdminDashboard.html"><button id="button">Save</button></a>
     </div>
-    <div>
-      <label><b>Author </b></label>
-      <input type="text" />
-    </div>
-    <br />
-    <div>
-      <label><b>Name </b> </label>
-      <input type="text" />
-    </div>
-    <br />
-    <div>
-      <label><b>Genre </b> </label>
-      <input type="text" />
-    </div>
-    <br />
-    <div>
-      <label><b>Year</b> </label>
-      <input type="text" />
-    </div>
-    <br />
-    <a href="./AdminDashboard.html"><button>Save</button></a>
   </body>
 </html>

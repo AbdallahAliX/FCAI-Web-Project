@@ -1,45 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <title>Book Space</title>
+    <title>new book</title>
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/landingPage.css" />
+    <link rel="stylesheet" href="styles/addNewBook.css" />
   </head>
   <body>
-    <div>
-      <h2>Add a new book</h2>
+    <h2>Add New Book</h2>
+
+    <div class="content">
+      <form method="post">
+        <div>
+          <label for="name"><b>Name</b></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter Book's Name"
+          />
+        </div>
+        <br />
+        <!-- <div>
+          <label for="id"><b>Book ID</b></label>
+          <input
+            type="text"
+            name="id"
+            id="id"
+            required
+            placeholder="Enter Book's ID"
+          />
+        </div> -->
+        <!-- <br /> -->
+        <div>
+          <label for="author"><b>Author</b></label>
+          <input
+            type="text"
+            name="author"
+            id="author"
+            required
+            placeholder="Enter Author's Name"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="category"><b>Category</b></label>
+          <select name="category" id="category">
+            <option value="romance">Romance</option>
+            <option value="adventure">Adventure</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="horror">Horror</option>
+            <option value="history">History</option>
+            <option value="crime">Crime</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="year"><b>Published in</b></label>
+          <input
+            type="text"
+            name="date"
+            id="year"
+            placeholder="Enter Publication Year"
+          />
+        </div>
+        <br />
+      </form>
+      <a href="./AdminDashboard.html"><button id="button">Save</button></a>
     </div>
-    <form method="post">
-      <div>
-        <label for="name"><b>Name</b></label>
-        <input type="text" name="name" id="name" required />
-      </div>
-      <br />
-      <div>
-        <label for="id"><b>Book ID</b></label>
-        <input type="text" name="id" id="id" required />
-      </div>
-      <br />
-      <div>
-        <label for="author"><b>Author</b></label>
-        <input type="text" name="author" id="author" required />
-      </div>
-      <br />
-      <div>
-        <label for="category"><b>Genre</b></label>
-        <input type="text" name="category" id="category" />
-      </div>
-      <br />
-      <div>
-        <label for="year"><b>Published in</b></label>
-        <input type="text" name="date" id="year" />
-      </div>
-      <br />
-      <div>
-        <!-- <input type="submit" id="save" value="Save" /> -->
-      </div>
-    </form>
-    <a href="./AdminDashboard.html"><button>Save</button></a>
   </body>
 </html>

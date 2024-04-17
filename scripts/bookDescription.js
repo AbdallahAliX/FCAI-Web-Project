@@ -19,6 +19,7 @@ function renderBookDetails(book) {
     <div>
       <h3>${book.title}</h3>
       <p><strong>Author:</strong> ${book.author}</p>
+      <p><strong>Category:</strong> ${book.category}</p>
       <p><strong>Year:</strong> ${book.year}</p>
     </div>
   `;
