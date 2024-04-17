@@ -32,11 +32,17 @@ let allBooks = [
 let userBooks = [
   {
     name: "SinEater",
+    author: "Megan Campisi",
+    year: 2020,
+    category: "History",
     image: "./resources/SinEater.jpeg",
   },
 
   {
     name: "Harrypoter and the cursed child",
+    author: "J.K. Rowling",
+    year: 2016,
+    category: "Fantasy",
     image: "./resources/HarryPoter.jpeg",
   },
 ];

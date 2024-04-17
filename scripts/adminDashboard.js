@@ -7,7 +7,11 @@ console.log(allBooks);
 searchBar.addEventListener("input", () => {
   const searchTerm = searchBar.value.toLowerCase();
   const filteredBooks = allBooks.filter((book) => {
-    return book.title.toLowerCase().includes(searchTerm);
+    return (
+      book.title.toLowerCase().includes(searchTerm) ||
+      book.author.toLowerCase().includes(searchTerm) ||
+      book.category.toLowerCase().includes(searchTerm)
+    );
   });
 
   bookContainer.innerHTML = ``;

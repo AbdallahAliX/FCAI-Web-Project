@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/addNewBook.css" />
   </head>
   <body>
+    <div class="navbar"></div>
     <h2>Add New Book</h2>
 
     <div class="content">
@@ -46,14 +47,7 @@
         <br />
         <div>
           <label for="category"><b>Category</b></label>
-          <select name="category" id="category">
-            <option value="romance">Romance</option>
-            <option value="adventure">Adventure</option>
-            <option value="fantasy">Fantasy</option>
-            <option value="horror">Horror</option>
-            <option value="history">History</option>
-            <option value="crime">Crime</option>
-          </select>
+          <select name="category" id="category" class="category"></select>
         </div>
         <br />
         <div>
@@ -69,5 +63,7 @@
       </form>
       <a href="./AdminDashboard.html"><button id="button">Save</button></a>
     </div>
+    <script src="scripts/add&edit.js"></script>
+    <script src="scripts/navbar.js"></script>
   </body>
 </html>

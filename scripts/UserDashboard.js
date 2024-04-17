@@ -6,7 +6,11 @@ const searchBar = document.querySelector(".search-bar");
 searchBar.addEventListener("input", () => {
   const searchTerm = searchBar.value.toLowerCase();
   const filteredBooks = userBooks.filter((book) => {
-    return book.name.toLowerCase().includes(searchTerm);
+    return (
+      book.title.toLowerCase().includes(searchTerm) ||
+      book.author.toLowerCase().includes(searchTerm) ||
+      book.category.toLowerCase().includes(searchTerm)
+    );
   });
 
   bookContainer.innerHTML = ``;
