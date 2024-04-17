@@ -7,7 +7,8 @@ if (currentPage === "landingPage.html") {
   `;
 } else if (
   currentPage === "allBooks.html" ||
-  currentPage === "userDashboard.html"
+  currentPage === "userDashboard.html" ||
+  currentPage === "bookDescription.html"
 ) {
   const navbar = document.querySelector(".navbar");
   navbar.innerHTML = `

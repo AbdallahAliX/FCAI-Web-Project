@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="styles/addNewBook.css" />
   </head>
   <body>
-    <div class="navbar"></div>
-    <h2>Add New Book</h2>
+    <section>
+      <div class="navbar"></div>
+      <h2>Add New Book</h2>
 
-    <div class="content">
-      <form method="post">
-        <div>
-          <label for="name"><b>Name</b></label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            required
-            placeholder="Enter Book's Name"
-          />
-        </div>
-        <br />
-        <!-- <div>
+      <div class="content">
+        <form method="post">
+          <div>
+            <label for="name"><b>Name</b></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Enter Book's Name"
+            />
+          </div>
+          <br />
+          <!-- <div>
           <label for="id"><b>Book ID</b></label>
           <input
             type="text"
@@ -33,36 +34,41 @@
             placeholder="Enter Book's ID"
           />
         </div> -->
-        <!-- <br /> -->
-        <div>
-          <label for="author"><b>Author</b></label>
-          <input
-            type="text"
-            name="author"
-            id="author"
-            required
-            placeholder="Enter Author's Name"
-          />
-        </div>
-        <br />
-        <div>
-          <label for="category"><b>Category</b></label>
-          <select name="category" id="category" class="category"></select>
-        </div>
-        <br />
-        <div>
-          <label for="year"><b>Published in</b></label>
-          <input
-            type="text"
-            name="date"
-            id="year"
-            placeholder="Enter Publication Year"
-          />
-        </div>
-        <br />
-      </form>
-      <a href="./AdminDashboard.html"><button id="button">Save</button></a>
-    </div>
+          <!-- <br /> -->
+          <div>
+            <label for="author"><b>Author</b></label>
+            <input
+              type="text"
+              name="author"
+              id="author"
+              required
+              placeholder="Enter Author's Name"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="category"><b>Category</b></label>
+            <select name="category" id="category" class="category"></select>
+          </div>
+          <br />
+          <div>
+            <label for="year"><b>Published in</b></label>
+            <input
+              type="text"
+              name="date"
+              id="year"
+              placeholder="Enter Publication Year"
+            />
+          </div>
+          <br />
+        </form>
+        <a href="./AdminDashboard.html"><button id="button">Save</button></a>
+      </div>
+      <div class="air air1"></div>
+      <div class="air air2"></div>
+      <div class="air air3"></div>
+      <div class="air air4"></div>
+    </section>
     <script src="scripts/add&edit.js" type="module"></script>
     <script src="scripts/navbar.js"></script>
   </body>

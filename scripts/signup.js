@@ -20,6 +20,8 @@ const signup = () => {
   } else {
     if (!isValidEmail(signupData.email)) {
       alert("Please enter a valid email address");
+    } else if (signupData.password.length < 8) {
+      alert("Password must be at least 8 characters");
     } else if (signupData.password !== signupData.confirmPassword) {
       alert("Passwords do not match");
     } else {

@@ -17,6 +17,8 @@ const login = () => {
     } else {
       if (!isValidEmail(loginData.email)) {
         alert("Please enter a valid email address");
+      } else if (loginData.password.length < 8) {
+        alert("Password must be at least 8 characters");
       } else {
         window.location.href = "userDashboard.html";
       }

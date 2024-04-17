@@ -71,7 +71,7 @@
 } */
 
 
-@import url('https://fonts.googleapis.com/css?family=Signika+Negative:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Signika+Negative:400,700');
 
 :root {
   --text: #ecf3f8;
@@ -79,7 +79,7 @@
   --primary: #93bfd8;
   --secondary: #73296d;
   --accent: #bd466c;
-}
+} */
 
 body {
   font-family: 'Signika Negative', sans-serif;

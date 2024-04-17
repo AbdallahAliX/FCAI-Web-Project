@@ -1,21 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Signika+Negative:400,700');
 
 :root {
-  --text: #ecf3f8;
+  /* --text: #ecf3f8;
   --background: #04080a;
   --primary: #93bfd8;
   --secondary: #73296d;
-  --accent: #bd466c;
+  --accent: #bd466c; */
+  --text: #ebdbf8;
+--background: #0f051a;
+--primary: #ba8ce8;
+--secondary: #901d4f;
+--accent: #d83e54;
+}
+
+
+* {
+  transition: all 0.25s ease-out;
 }
 
 body {
   font-family: 'Signika Negative', sans-serif;
   font-weight: 400;
   color: var(--text);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
   background-color: var(--background);
-    margin: 0;
-    padding: 0;
-    height: 100vh;
 }
 
 h1, h2, h3, h4, h5 {
@@ -23,7 +33,9 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
 }
 
-html { font-size: 100%; } /* 16px */
+html { 
+  font-size: 100%; 
+} /* 16px */
 
 h1 { font-size: 4.210rem; margin: 0; /* 67.36px */ }
 
@@ -62,3 +74,69 @@ small { font-size: 0.750rem; /* 12px */ }
     text-align: center;
     margin-top: 2rem;
   }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--background);
+    overflow: hidden;
+  }
+  section .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px
+  }
+  section .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  section .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  section .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  section .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
+ 

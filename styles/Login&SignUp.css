@@ -1,10 +1,10 @@
-:root {
+/* :root {
     --text: #ecf3f8;
     --background: #04080a;
     --primary: #93bfd8;
     --secondary: #73296d;
     --accent: #bd466c;
-  }
+  } */
 container{
     display: flexbox;
     }
