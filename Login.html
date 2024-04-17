@@ -13,26 +13,32 @@
         <div class="control">
           <label><b>Email</b></label>
           <br />
-          <input type="email" placeholder="Enter Email" required />
+          <input id="email" type="email" placeholder="Enter Email" required />
           <br />
           <label><b>Password</b></label>
           <br />
-          <input type="Password" placeholder="Enter Password" required />
+          <input
+            id="password"
+            type="Password"
+            placeholder="Enter Password"
+            required
+          />
           <br />
-          <input type="radio" name="account type" />
+          <!-- <input id="adminButton" type="radio" name="account type" />
           <label><b>Admin</b></label>
-          <input type="radio" name="account type" />
+          <input id="userButton" type="radio" name="account type" />
           <label><b>User</b></label>
-          <br />
+          <br /> -->
 
           <!-- <a href="./AdminDashboard.html"><button type="submit">Login</button></a> -->
         </div>
       </form>
-      <a href="./AdminDashboard.html"><button>Login</button></a>
+      <a><button id="loginButton">Login</button></a>
     </div>
     <p class="Reg">
       Not Registered?
       <a href="SignUp.html"> Create an account </a>
     </p>
+    <script src="scripts/login.js"></script>
   </body>
 </html>

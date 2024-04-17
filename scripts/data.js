@@ -47,4 +47,17 @@ let userBooks = [
   },
 ];
 
-export { allBooks, userBooks };
+const category = [
+  "All",
+  "History",
+  "Fantasy",
+  "Romance",
+  "Crime",
+  "Horror",
+  "Science Fiction",
+  "Biography",
+  "Adventure",
+  "Sports",
+];
+
+export { allBooks, userBooks, category };

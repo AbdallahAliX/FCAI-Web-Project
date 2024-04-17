@@ -31,7 +31,7 @@ const renderBooks = (allBooks) => {
             </a>
           </div>
           <p>${data.title}</p>
-          <a href="./editBook.html?index=${index}" target="_blank">
+          <a href="./editBook.html?index=${index}" >
           <button>Edit</button>
             </a>
           <button>Delete</button>`;
