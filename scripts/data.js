@@ -60,4 +60,47 @@ const category = [
   "Sports",
 ];
 
-export { allBooks, userBooks, category };
+const teamMembers = [
+  {
+    name: "Abdallah Mohamed",
+    photo: "./resources/aboutUs/Abdallah.jpg",
+    github: "https://github.com/AbdallahAliX",
+    linkedin: "https://www.linkedin.com/in/abdallah-ali-8a6320184/",
+    upwork:
+      "https://www.upwork.com/freelancers/~0176f1a66c7629bfe4?mp_source=share",
+  },
+  {
+    name: "Yousef Mohamed",
+    photo: "./resources/aboutUs/Yousef.jpg",
+    github: "https://github.com/YoussefMohamedSafwat",
+    linkedin: "https://www.linkedin.com/in/yousef-mohamed-safwat-b84557261/",
+  },
+  {
+    name: "Mohamed Maged",
+    photo: "./resources/aboutUs/Mohamed.jpg",
+    github:
+      "https://github.com/mmo5mn?tab=overview&from=2024-04-01&to=2024-04-18",
+    linkedin:
+      "https://www.linkedin.com/in/mohamed-maged-b15a14271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Aliaa Eid",
+    photo: "./resources/aboutUs/Aliaa.jpg",
+    github: "https://github.com/Alia-eid",
+    linkedin: "https://www.linkedin.com/in/aliaa-eid-b409462a6",
+  },
+  {
+    name: "Mariam Mohamed",
+    photo: "./resources/aboutUs/Mariam.jpg",
+    github: "https://github.com/Mariam-111",
+    linkedin: "http://www.linkedin.com/in/mariam-mohamed-2015822a6",
+  },
+  {
+    name: "Omnia Hesham",
+    photo: "./resources/aboutUs/Omnia.jpg",
+    github: "https://github.com/omnjja",
+    linkedin: "https://www.linkedin.com/in/omnia-hesham-4556732a0",
+  },
+];
+
+export { allBooks, userBooks, category, teamMembers };
