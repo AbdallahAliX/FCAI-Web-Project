@@ -17,7 +17,7 @@ const renderMembers = (members) => {
         }
         ${
           member.linkedin
-            ? `<a href="${member.linkedin}" target="_blank"><img width="35" height="35" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/></a>`
+            ? `<a href="${member.linkedin}" target="_blank"><img class="card-icon" width="35" height="35" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/></a>`
             : ""
         }
         ${

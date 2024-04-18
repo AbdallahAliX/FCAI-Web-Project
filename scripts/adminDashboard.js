@@ -34,8 +34,16 @@ const renderBooks = (allBooks) => {
           <a href="./editBook.html?index=${index}" >
           <button>Edit</button>
             </a>
-          <button>Delete</button>`;
+          <button class="delete">Delete</button>`;
     bookContainer.appendChild(book);
+  });
+  const deleteButtons = document.querySelectorAll(".delete");
+  deleteButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      allBooks.splice(index, 1);
+      bookContainer.innerHTML = ``;
+      renderBooks(allBooks);
+    });
   });
 };
 

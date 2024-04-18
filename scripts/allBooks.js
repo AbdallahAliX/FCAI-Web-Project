@@ -30,8 +30,17 @@ const renderBooks = (allBooks) => {
               />
             </a>
           <p>${data.title}</p>
-          <button>Rent</button>`;
+          <button class="rent-button">Rent</button>`;
     bookContainer.appendChild(book);
+  });
+
+  const rentButtons = document.querySelectorAll(".rent-button");
+  rentButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      allBooks.splice(index, 1);
+      bookContainer.innerHTML = ``;
+      renderBooks(allBooks);
+    });
   });
 };
 

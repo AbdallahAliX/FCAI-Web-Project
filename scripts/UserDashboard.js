@@ -31,20 +31,16 @@ const renderBooks = (userBooks) => {
                         <p>${data.name}</p>
                         <button class="return-button">Return</button>`;
     bookContainer.appendChild(book);
-    // const returnButton = book.querySelector(".return-button");
-    // returnButton.addEventListener("click", () => returnBook(data.name));
+  });
+
+  const returnButtons = document.querySelectorAll(".return-button");
+  returnButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      userBooks.splice(index, 1);
+      bookContainer.innerHTML = ``;
+      renderBooks(userBooks);
+    });
   });
 };
-
-// const returnBook = (name) => {
-//   const conf = confirm("Are you sure you want to return this book ?");
-//   if (conf) {
-//     const userBooksFiltered = userBooks.filter((book) => book.name !== name);
-//     bookContainer.innerHTML = "";
-//     console.log(userBooks);
-//     renderBooks(userBooksFiltered);
-//     alert("Book returned successfully");
-//   }
-// };
 
 window.onload = renderBooks(userBooks);

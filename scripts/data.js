@@ -64,6 +64,7 @@ const teamMembers = [
   {
     name: "Abdallah Mohamed",
     photo: "./resources/aboutUs/Abdallah.jpg",
+    role: "Team Leader",
     github: "https://github.com/AbdallahAliX",
     linkedin: "https://www.linkedin.com/in/abdallah-ali-8a6320184/",
     upwork:
