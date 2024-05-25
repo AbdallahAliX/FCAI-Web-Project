@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Signika+Negative:400,700');
 
 :root {
-  /* --text: #ecf3f8;
-  --background: #04080a;
-  --primary: #93bfd8;
-  --secondary: #73296d;
-  --accent: #bd466c; */
   --text: #ebdbf8;
---background: #0f051a;
---primary: #ba8ce8;
---secondary: #901d4f;
---accent: #d83e54;
+  --background: #0f051a;
+  --primary: #ba8ce8;
+  --secondary: #901d4f;
+  --accent: #d83e54;
 }
-
 
 * {
   transition: all 0.25s ease-out;
@@ -24,8 +18,8 @@ body {
   color: var(--text);
   margin: 0;
   padding: 0;
-  height: 100vh;
   background-color: var(--background);
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 h1, h2, h3, h4, h5 {
@@ -33,9 +27,9 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
 }
 
-html { 
-  font-size: 100%; 
-} /* 16px */
+html {
+  font-size: 100%; /* 16px */
+}
 
 h1 { font-size: 4.210rem; margin: 0; /* 67.36px */ }
 
@@ -50,93 +44,131 @@ h5 { font-size: 1.333rem; /* 21.28px */ }
 small { font-size: 0.750rem; /* 12px */ }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary);
-    padding: 1.6rem;
-  }
-  
-  
-  .nav-link {
-    color: var(--text);
-    text-decoration: none;
-    margin-right: 20px;
-  }
-  
-  .nav-link:hover {
-    color: var(--primary);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+  padding: 1.6rem;
+}
 
-  .container {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    margin-top: 2rem;
-  }
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  margin-right: 20px;
+}
 
-  *{
-    margin: 0;
-    padding: 0;
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ensures the section takes full height of the viewport */
+  background: var(--background);
+  padding-bottom: 120px; /* Add bottom padding equal to the height of the waves */
+  box-sizing: border-box; /* Ensure padding is included in height calculations */
+}
+
+.waves {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust this height if necessary */
+  pointer-events: none; /* Ensures waves do not interfere with other elements */
+  z-index: 999; /* Ensures waves are above other content */
+}
+
+.waves .air {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px;
+}
+
+.waves .air.air1 {
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+}
+
+.waves .air.air2 {
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+.waves .air.air3 {
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+.waves .air.air4 {
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0px;
   }
-  section{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: var(--background);
-    overflow: hidden;
+  100% {
+    background-position-x: 1000px;
   }
-  section .air{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
-    background-size: 1000px 100px
+}
+
+@keyframes wave2 {
+  0% {
+    background-position-x: 0px;
   }
-  section .air.air1{
-    animation: wave 30s linear infinite;
-    z-index: 1000;
-    opacity: 1;
-    animation-delay: 0s;
-    bottom: 0;
+  100% {
+    background-position-x: -1000px;
   }
-  section .air.air2{
-    animation: wave2 15s linear infinite;
-    z-index: 999;
-    opacity: 0.5;
-    animation-delay: -5s;
-    bottom: 10px;
-  }
-  section .air.air3{
-    animation: wave 30s linear infinite;
-    z-index: 998;
-    opacity: 0.2;
-    animation-delay: -2s;
-    bottom: 15px;
-  }
-  section .air.air4{
-    animation: wave2 5s linear infinite;
-    z-index: 997;
-    opacity: 0.7;
-    animation-delay: -5s;
-    bottom: 20px;
-  }
-  @keyframes wave{
-    0%{
-      background-position-x: 0px; 
-    }
-    100%{
-      background-position-x: 1000px; 
-    }
-  }
-  @keyframes wave2{
-    0%{
-      background-position-x: 0px; 
-    }
-    100%{
-      background-position-x: -1000px; 
-    }
-  }
- 
+}
+
+::-webkit-scrollbar {
+  width: 6px; /* Width of the vertical scrollbar */
+  height: 10px; /* Height of the horizontal scrollbar */
+}
+
+/* Background of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: none; 
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary); 
+  border-radius: 6px; /* Rounded corners */
+}
+
+
+/* Optional: for the corner where horizontal and vertical scrollbars meet */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}

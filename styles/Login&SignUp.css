@@ -5,9 +5,14 @@
     --secondary: #73296d;
     --accent: #bd466c;
   } */
-container{
-    display: flexbox;
+.title{
+    text-align: center;
+    color: var(--text);
+    font-size: 3rem;
+    padding-top: 20px;
     }
+
+
 .control{
     flex:1;
     justify-content: center;
@@ -24,7 +29,7 @@ button {
     cursor: pointer;
     }
 input[type=email], input[type=password],input[type=text] {
-    width: 40%;
+    width: 35%;
     padding: 12px 20px;
     margin: 8px 0;
     border: 1px solid var(--primary);
@@ -39,4 +44,22 @@ input::placeholder{
 p.Reg {
     text-align: center  ;
     padding-top: 16px;
+    }
+#role{
+    border: 1px solid var(--text);
+    border-radius: 10px;
+    width: 35%;
+    height: 41px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 8px 0;
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    }
+option{
+    background-color: #c0cdd4;
+    color: #04080a;
+    font-family: 'Signika Negative', sans-serif;
     }

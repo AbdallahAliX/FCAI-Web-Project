@@ -12,29 +12,18 @@
       <h2>Add New Book</h2>
 
       <div class="content">
-        <form method="post">
+        <form id="addBookForm">
           <div>
-            <label for="name"><b>Name</b></label>
+            <label for="title"><b>Title</b></label>
             <input
               type="text"
-              name="name"
-              id="name"
+              name="title"
+              id="title"
               required
-              placeholder="Enter Book's Name"
+              placeholder="Enter Book's title"
             />
           </div>
           <br />
-          <!-- <div>
-          <label for="id"><b>Book ID</b></label>
-          <input
-            type="text"
-            name="id"
-            id="id"
-            required
-            placeholder="Enter Book's ID"
-          />
-        </div> -->
-          <!-- <br /> -->
           <div>
             <label for="author"><b>Author</b></label>
             <input
@@ -55,21 +44,34 @@
             <label for="year"><b>Published in</b></label>
             <input
               type="text"
-              name="date"
+              name="year"
               id="year"
               placeholder="Enter Publication Year"
             />
           </div>
           <br />
+          <div>
+            <label for="image"><b>Image URL</b></label>
+            <input
+              type="text"
+              name="image"
+              id="image"
+              placeholder="Enter Image URL"
+            />
+          </div>
+          <br />
+          <button type="submit" id="submitButton">Save</button>
         </form>
-        <a href="./AdminDashboard.html"><button id="button">Save</button></a>
       </div>
-      <div class="air air1"></div>
-      <div class="air air2"></div>
-      <div class="air air3"></div>
-      <div class="air air4"></div>
+      <div class="waves">
+        <div class="air air1"></div>
+        <div class="air air2"></div>
+        <div class="air air3"></div>
+        <div class="air air4"></div>
+      </div>
     </section>
     <script src="scripts/add&edit.js" type="module"></script>
+    <script src="scripts/addNewBook.js" type="module"></script>
     <script src="scripts/navbar.js"></script>
   </body>
 </html>
